@@ -1,7 +1,7 @@
 # REQUIRED CONFIG
 BOT_TOKEN = ""
 OWNER_ID = 6522076714
-TELEGRAM_API = 
+TELEGRAM_API = 0
 TELEGRAM_HASH = ""
 
 # Recommended for persisting settings, RSS feeds, and task history. Essential for some features.
@@ -81,7 +81,7 @@ USENET_SERVERS = [  # List of Usenet server configurations
 
 # Update
 UPSTREAM_REPO = (
-    "https://github.com/AeonOrg/Aeon-MLTB"  # Upstream repository for updates
+    "https://github.com/demon-cpu/ren-he-aeon"  # Upstream repository for updates
 )
 UPSTREAM_BRANCH = "main"  # Default branch for updates
 
