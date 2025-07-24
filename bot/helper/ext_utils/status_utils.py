@@ -172,8 +172,8 @@ def get_progress_bar_string(pct):
         pct = float(pct.strip("%"))
     p = min(max(pct, 0), 100)
     c_full = int((p + 5) // 10)
-    p_str = "◆" * c_full
-    p_str += "◇" * (10 - c_full)
+    p_str = "▰" * c_full
+    p_str += "▱" * (10 - c_full)
     return p_str
 
 
@@ -216,7 +216,7 @@ async def get_readable_message(sid, is_user, page_no=1, status="All", page_step=
             msg += f"<b>{index + start_position}. <a href='{task.listener.message.link}'>{tstatus}</a>: </b>"
         else:
             msg += f"<b>{index + start_position}. {tstatus}: </b>"
-        msg += f"<code>{escape(f'{task.name()}')}</code>"
+        msg += f"<b>{escape(f'{task.name()}')}</b>"
         if task.listener.subname:
             msg += f"\n<i>{task.listener.subname}</i>"
         msg += f"\nby: {source(task.listener)}"
